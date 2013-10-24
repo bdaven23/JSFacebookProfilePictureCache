@@ -7,7 +7,7 @@ JSFacebookProfilePictureCache
 
 ## Usage
 
-``` objective-c
+```objective-c
 NSString *fbId = [friend valueForKey:@"id"];	// get a Facebook ID
 [[JSFacebookProfilePictureCache sharedInstance] getProfilePictureThumbnailForFriend:fbId withCompletionBlock:^(NSData *profilePictureData) {
 	[iv setImage:[UIImage imageWithData:profilePictureData]];
